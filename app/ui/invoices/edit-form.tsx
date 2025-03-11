@@ -21,6 +21,7 @@ export default function EditInvoiceForm({
 }) {
   const initialState : State = {message: null, errors: {}}
   const updateInvoiceById = updateInvoice.bind(null, invoice.id)
+  /* eslint-disable */
   const [_, formAction]= useActionState(updateInvoiceById, initialState)
   return (
     <form action={formAction}>
